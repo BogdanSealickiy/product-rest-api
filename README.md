@@ -48,15 +48,20 @@ JSON containing the product name
 Retrieves a list of all products stored in the database.
 - **Response:**  
 `200 OK` with a JSON array of products
+<img width="1280" height="672" alt="image" src="https://github.com/user-attachments/assets/cfd097d8-5f94-41df-b948-537ffb5b789c" />
 
-### 3 Get Product by ID (GET)
-GET /api/v1/products/{id}
 
-- **Description:**  
-Retrieves a single product by its unique identifier.
-- **Response:**  
-`200 OK` if found  
-`404 Not Found` if the product does not exist
+### 3Delete Product (DELETE)
+
+Endpoint:
+-**Description:**
+Deletes a product from the database using its unique identifier.
+-**Input:**
+Product ID provided in the URL path
+
+Response:
+204 No Content if the product was successfully deleted
+404 Not Found if the product does not exist
 <img width="1280" height="689" alt="image" src="https://github.com/user-attachments/assets/54c097fb-95b0-4ab3-b07e-dec9a32f913b" />
 <img width="1280" height="452" alt="image" src="https://github.com/user-attachments/assets/8a447436-2930-48c6-a08d-9018538fd464" />
 
