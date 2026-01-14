@@ -1,69 +1,90 @@
-Product REST API (Spring Boot)
-Project Overview
+# Product REST API – Spring Boot Project
 
-This application is a simple RESTful API developed with Java and Spring Boot.
-Its purpose is to provide basic product management functionality using standard CRUD operations (create, read, update and delete).
-The data is stored in an H2 in-memory database, and all endpoints can be explored and tested via Swagger UI.
+## Project Description
 
-Technologies
-The project was built using the following tools and frameworks:
+This project is a RESTful web application developed using **Java** and **Spring Boot**.  
+The application provides basic **CRUD operations** (Create, Read, Update, Delete) for managing products via HTTP requests.
 
-Java 17
-Spring Boot 3.3.5
-Spring Data JPA
-H2 In-Memory Database
-OpenAPI / Swagger UI
-Maven
-API Documentation
+All endpoints are documented and can be tested using **Swagger UI**.  
+The application uses an **H2 in-memory database**, so no external database configuration is required.
 
-All available endpoints are documented using Swagger UI.
-You can access it after starting the application:
 
-Swagger UI:
-http://localhost:8080/swagger-ui/index.html
+## Technologies Used
 
-Application Functionality
-Below is a brief explanation of how the API works and what operations are supported.
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- H2 In-Memory Database  
+- OpenAPI / Swagger UI  
+- Maven  
 
-1. Swagger UI Overview
-Swagger UI displays all REST endpoints exposed by the Product Controller and allows testing them directly from the browser.
+## How to Run the Application
 
-2. Create Product
-Method: POST
-Endpoint: /api/v1/products
-Creates a new product and saves it in the database.
-Request body: JSON with product name
-Response: HTTP 201 (Created) with the saved product and generated ID
+1. Clone the repository
+2. Open the project in an IDE (IntelliJ IDEA / VS Code)
+3. Run the main class
+4. The application will start on:
 
-4. Get All Products
-Method: GET
-Endpoint: /api/v1/products
-Returns a list of all products stored in the database.
+   http://localhost:8080/swagger-ui/index.html
 
-5. Get Product by ID
-Method: GET
-Endpoint: /api/v1/products/{id}
-Fetches a single product based on its identifier.
+   <img width="1280" height="670" alt="image" src="https://github.com/user-attachments/assets/24684238-25b6-4e6e-af9e-218692b635fc" />
 
-6. Update Product
-Method: PUT
-Endpoint: /api/v1/products/{id}
+Create Product (POST)
+POST /api/v1/products
+
+- **Description:**  
+Creates a new product and stores it in the database.
+- **Request body:**  
+JSON containing the product name
+- **Response:**  
+`201 Created` with the created product and generated ID
+
+<img width="1280" height="679" alt="image" src="https://github.com/user-attachments/assets/db746781-f408-4754-9954-98b4470e5cf6" />
+<img width="1280" height="677" alt="image" src="https://github.com/user-attachments/assets/94338262-691a-4ccf-a2b1-735891efbebe" />
+
+### 2. Get All Products (GET)
+
+- **Description:**  
+Retrieves a list of all products stored in the database.
+- **Response:**  
+`200 OK` with a JSON array of products
+
+### 3 Get Product by ID (GET)
+GET /api/v1/products/{id}
+
+- **Description:**  
+Retrieves a single product by its unique identifier.
+- **Response:**  
+`200 OK` if found  
+`404 Not Found` if the product does not exist
+<img width="1280" height="689" alt="image" src="https://github.com/user-attachments/assets/54c097fb-95b0-4ab3-b07e-dec9a32f913b" />
+<img width="1280" height="452" alt="image" src="https://github.com/user-attachments/assets/8a447436-2930-48c6-a08d-9018538fd464" />
+
+### 4. Update Product (PUT)
+- **Description:**  
 Updates the name of an existing product.
-Input: product ID in the URL and JSON body with updated data
-Response: HTTP 200 (OK) with modified product
+- **Input:**  
+Product ID in the URL and JSON body with updated name
+- **Response:**  
+`200 OK` with updated product  
+`404 Not Found` if the product does not exist
 
-7. Delete Product
-Method: DELETE
-Endpoint: /api/v1/products/{id}
-Deletes a product from the database.
-Response: HTTP 204 (No Content)
+<img width="1815" height="1015" alt="image" src="https://github.com/user-attachments/assets/c0daa53f-0ac9-4a1f-b1ce-7b51bc383d06" />
+<img width="1821" height="518" alt="image" src="https://github.com/user-attachments/assets/d92416f1-48a1-4b16-bb68-8489e7852552" />
 
-8. Error Handling
-If a product with the given ID does not exist, the API responds with an error message and HTTP status 404 (Not Found).
+### 5 Get Product by ID 
+- **Description:**
+  Find the product
+- **Input:**  
+Product ID in the URL and JSON body with updated name
+ **Response:**  
+`200 OK` with updated product  
+`404 Not Found` if the product does not exist
+<img width="1280" height="683" alt="image" src="https://github.com/user-attachments/assets/bb0aa03d-32dd-4792-908d-428fff77cd74" />
+<img width="1280" height="687" alt="image" src="https://github.com/user-attachments/assets/be656b70-4e2f-4305-995f-e8408ae8cee6" />
 
-Database (H2 Console)
-To confirm that data is correctly stored, the H2 database console can be used.
 
-Console URL: http://localhost:8080/console
 
-JDBC URL: jdbc:h2:mem:testdb
+
+
+
