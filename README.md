@@ -79,16 +79,32 @@ Product ID in the URL and JSON body with updated name
 <img width="1815" height="1015" alt="image" src="https://github.com/user-attachments/assets/c0daa53f-0ac9-4a1f-b1ce-7b51bc383d06" />
 <img width="1821" height="518" alt="image" src="https://github.com/user-attachments/assets/d92416f1-48a1-4b16-bb68-8489e7852552" />
 
-### 5 Get Product by ID 
-- **Description:**
-  Find the product
+### 5. Get Product by ID (GET)
+
+- **Endpoint:**  
+  GET /api/v1/products/{id}
+
+- **Description:**  
+Retrieves a single product using its unique identifier.
+
 - **Input:**  
-Product ID in the URL and JSON body with updated name
- **Response:**  
-`200 OK` with updated product  
+Product ID provided in the URL path.
+
+- **Response:**  
+`200 OK` with product details if the product exists  
 `404 Not Found` if the product does not exist
+
 <img width="1280" height="683" alt="image" src="https://github.com/user-attachments/assets/bb0aa03d-32dd-4792-908d-428fff77cd74" />
 <img width="1280" height="687" alt="image" src="https://github.com/user-attachments/assets/be656b70-4e2f-4305-995f-e8408ae8cee6" />
+
+## Summary
+
+This project demonstrates a complete RESTful API built with Spring Boot, covering all basic CRUD operations using HTTP methods (GET, POST, PUT, DELETE).
+
+All application features are documented and tested via Swagger UI, and the in-memory H2 database allows the application to run without any external dependencies.
+
+The provided screenshots confirm the correct behavior of each endpoint, including successful operations and proper error handling.
+
 
 
 
