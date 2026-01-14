@@ -43,7 +43,8 @@ JSON containing the product name
 <img width="1280" height="677" alt="image" src="https://github.com/user-attachments/assets/94338262-691a-4ccf-a2b1-735891efbebe" />
 
 ### 2. Get All Products (GET)
-
+- **Endpoint:**  
+GET /api/v1/products
 - **Description:**  
 Retrieves a list of all products stored in the database.
 - **Response:**  
@@ -52,8 +53,8 @@ Retrieves a list of all products stored in the database.
 
 
 ### 3. Delete Product (DELETE)
-
-Endpoint:
+- **Endpoint:**  
+DELETE/api/v1/products/{id}
 -**Description:**
 Deletes a product from the database using its unique identifier.
 -**Input:**
@@ -68,6 +69,8 @@ Response:
 
 
 ### 4. Update Product (PUT)
+- **Endpoint:**  
+Put /api/v1/products/{id}
 - **Description:**  
 Updates the name of an existing product.
 - **Input:**  
