@@ -51,7 +51,7 @@ Retrieves a list of all products stored in the database.
 <img width="1280" height="672" alt="image" src="https://github.com/user-attachments/assets/cfd097d8-5f94-41df-b948-537ffb5b789c" />
 
 
-### 3Delete Product (DELETE)
+### 3. Delete Product (DELETE)
 
 Endpoint:
 -**Description:**
@@ -64,6 +64,8 @@ Response:
 404 Not Found if the product does not exist
 <img width="1280" height="689" alt="image" src="https://github.com/user-attachments/assets/54c097fb-95b0-4ab3-b07e-dec9a32f913b" />
 <img width="1280" height="452" alt="image" src="https://github.com/user-attachments/assets/8a447436-2930-48c6-a08d-9018538fd464" />
+<img width="1791" height="974" alt="image" src="https://github.com/user-attachments/assets/2acfdd86-1932-475d-915e-09fcabdf9faf" />
+
 
 ### 4. Update Product (PUT)
 - **Description:**  
